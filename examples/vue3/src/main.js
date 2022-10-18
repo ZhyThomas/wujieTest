@@ -6,11 +6,13 @@ import Button from "element-plus/es/components/button/index";
 import Dialog from "element-plus/es/components/dialog/index";
 import Select from "element-plus/es/components/select/index";
 import Popover from "element-plus/es/components/popover/index";
+import Table from "element-plus/es/components/table/index";
 import AButton from "ant-design-vue/es/button";
 import ASelect from "ant-design-vue/es/select";
 import AModal from "ant-design-vue/es/modal";
 import APopover from "ant-design-vue/es/popover";
 import "element-plus/es/components/button/style/css";
+import "element-plus/es/components/table/style/css";
 import "element-plus/es/components/tag/style/css";
 import "element-plus/es/components/dialog/style/css";
 import "element-plus/es/components/select/style/css";
@@ -27,6 +29,7 @@ createApp(App)
   .use(Button)
   .use(Dialog)
   .use(Select)
+  .use(Table)
   .use(Popover)
   .use(AButton)
   .use(ASelect)

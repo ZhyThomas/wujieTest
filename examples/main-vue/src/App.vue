@@ -65,7 +65,7 @@
       <router-link to="/all">all</router-link>
       <a-button class="menu-icon" type="primary" icon="unordered-list" size="large" @click.stop="active = !active" />
     </div>
-    <div class="content" @click="active = false">
+    <div class="content" @click="active = false" style="margin: 40px;padding: 40px;">
       <router-view />
     </div>
   </div>

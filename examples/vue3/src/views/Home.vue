@@ -16,11 +16,17 @@
       </p>
       <p>
         <el-button @click="() => open('https://github.com/Tencent/wujie/tree/master/examples/vue3')"
-          >仓库地址</el-button
+          >仓库地址1</el-button
         >
       </p>
     </div>
   </div>
+  <el-table
+    :data="tableData"
+    style="width: 100%"
+  >
+    <el-table-column width="100px" property="address" label="Address" show-overflow-tooltip />
+  </el-table>
 </template>
 
 <script>
@@ -29,6 +35,9 @@ export default {
   data() {
     return {
       open: window.open,
+      tableData:[{
+        address:"很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长"
+      }]
     };
   },
   components: {
